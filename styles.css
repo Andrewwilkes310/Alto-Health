@@ -1,23 +1,18 @@
 /* =========================================================
-   Alto Health — Shared Stylesheet
-   Brand: Senior-focused Medicare Advantage primary care
-   Palette sampled from actual Alto logo
+   Alto Health — Shared Stylesheet v3
+   Brand colors sampled from logo
+   Logo rendered as inline SVG (transparent, vector)
    ========================================================= */
 
 :root {
-  /* Brand colors — sampled from logo */
   --alto-teal: #357291;
   --alto-teal-dark: #264F66;
   --alto-teal-deep: #1A3A4D;
   --alto-sage: #9FB197;
   --alto-sage-dark: #7E967A;
-
-  /* Supporting */
   --navy-deep: #1A3A4D;
   --coral: #E8A48E;
   --coral-deep: #D08A75;
-
-  /* Neutrals */
   --cream: #FAF8F4;
   --cloud-white: #F5F2EC;
   --warm-tan: #E8E0D2;
@@ -25,19 +20,13 @@
   --cool-gray: #6B6E73;
   --charcoal: #2A2D34;
   --white: #FFFFFF;
-
-  /* Type */
   --font-display: "Fraunces", Georgia, serif;
   --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, sans-serif;
-
-  /* Layout */
   --max-width: 1200px;
   --gutter: 24px;
   --radius-sm: 8px;
   --radius-md: 14px;
   --radius-lg: 24px;
-
-  /* Shadows */
   --shadow-sm: 0 2px 8px rgba(26, 58, 77, 0.06);
   --shadow-md: 0 8px 24px rgba(26, 58, 77, 0.08);
   --shadow-lg: 0 18px 48px rgba(26, 58, 77, 0.12);
@@ -87,11 +76,25 @@ section { padding: 88px 0; }
 }
 .nav-wrap {
   display: flex; align-items: center; justify-content: space-between;
-  padding: 16px var(--gutter);
+  padding: 14px var(--gutter);
   max-width: var(--max-width); margin: 0 auto; gap: 24px;
 }
-.brand { display: flex; align-items: center; text-decoration: none; flex-shrink: 0; }
-.brand img { height: 44px; width: auto; display: block; }
+
+/* LOGO — inline SVG */
+.brand {
+  display: flex; align-items: center; text-decoration: none; flex-shrink: 0;
+  height: 44px;
+}
+.alto-logo {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+.alto-logo--white .chevron-top { stroke: rgba(255,255,255,0.95); }
+.alto-logo--white .chevron-bottom { stroke: rgba(255,255,255,0.75); }
+.alto-logo--white .wordmark-alto { fill: rgba(255,255,255,0.95); }
+.alto-logo--white .wordmark-health { fill: rgba(255,255,255,0.75); }
+
 .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; margin: 0; padding: 0; }
 .nav-links a {
   color: var(--charcoal); font-weight: 500; font-size: 1rem;
@@ -119,9 +122,9 @@ section { padding: 88px 0; }
 
 @media (max-width: 880px) {
   .nav-links {
-    position: fixed; top: 76px; right: -100%;
+    position: fixed; top: 72px; right: -100%;
     flex-direction: column; background: white;
-    width: 80%; max-width: 320px; height: calc(100vh - 76px);
+    width: 80%; max-width: 320px; height: calc(100vh - 72px);
     padding: 32px 24px; gap: 20px; align-items: flex-start;
     box-shadow: var(--shadow-lg); transition: right 0.3s ease;
   }
@@ -129,7 +132,8 @@ section { padding: 88px 0; }
   .nav-links li { width: 100%; }
   .nav-cta { display: inline-block; }
   .mobile-toggle { display: block; }
-  .brand img { height: 38px; }
+  .alto-logo { height: 34px; }
+  .brand { height: 38px; }
 }
 
 /* BUTTONS */
@@ -151,7 +155,7 @@ section { padding: 88px 0; }
 .btn-arrow::after { content: "→"; margin-left: 4px; transition: transform 0.2s ease; }
 .btn-arrow:hover::after { transform: translateX(3px); }
 
-/* HERO — clean, centered, balanced */
+/* HERO — clean, centered */
 .hero {
   background: var(--cream);
   padding: 120px 0 100px;
@@ -203,9 +207,7 @@ section { padding: 88px 0; }
 
 /* VALUE PROPS */
 .value-props { background: white; }
-.value-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 40px;
-}
+.value-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 40px; }
 .value-card {
   background: var(--cream); padding: 36px 28px; border-radius: var(--radius-md);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -475,7 +477,7 @@ section { padding: 88px 0; }
 .site-footer { background: var(--navy-deep); color: rgba(255,255,255,0.7); padding: 64px 0 32px; }
 .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 48px; }
 .footer-brand { margin-bottom: 16px; }
-.footer-brand img { height: 44px; width: auto; filter: brightness(0) invert(1); opacity: 0.95; }
+.footer-brand .alto-logo { height: 44px; }
 .footer-tagline { color: rgba(255,255,255,0.6); font-size: 0.95rem; line-height: 1.6; max-width: 280px; }
 .footer-col h4 {
   color: white; font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600;

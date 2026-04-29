@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>About | Alto Health</title>
-<meta name="description" content="Alto Health is a Medicare Advantage primary care practice serving South Florida — built around long visits, real relationships, and care that's coordinated for you." />
+<meta name="description" content="Alto Health is a Medicare Advantage primary care practice serving South Florida." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -14,8 +14,13 @@
 
 <header class="site-header">
   <div class="nav-wrap">
-    <a href="index.html" class="brand">
-      <img src="images/alto-logo.jpg" alt="Alto Health" />
+    <a href="index.html" class="brand" aria-label="Alto Health home">
+      <svg class="alto-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196 56" aria-label="Alto Health">
+  <path class="chevron-top" d="M5 28 L26 7 L47 28" stroke="#357291" stroke-width="11" fill="none" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path class="chevron-bottom" d="M5 51 L26 30 L47 51" stroke="#9FB197" stroke-width="11" fill="none" stroke-linecap="square" stroke-linejoin="miter"/>
+  <text class="wordmark-alto" x="62" y="33" font-family="'DM Sans', system-ui, sans-serif" font-size="30" font-weight="700" fill="#357291" letter-spacing="-0.5">alto</text>
+  <text class="wordmark-health" x="62" y="52" font-family="'DM Sans', system-ui, sans-serif" font-size="14" font-weight="600" fill="#9FB197" letter-spacing="4.5">HEALTH</text>
+</svg>
     </a>
     <button class="mobile-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
       <span></span><span></span><span></span>
@@ -43,7 +48,7 @@
     <div class="about-body">
       <p>Alto Health was built on a simple idea: seniors deserve doctors who actually have time for them.</p>
       <p>We're a South Florida primary care practice serving Medicare Advantage members across our growing network of neighborhood clinics. We believe in spending more time with fewer patients, coordinating every piece of care, and treating each member like family.</p>
-      <p>Behind our clinics is the Alto MSO &mdash; the operational platform that lets our physicians focus on patients while we handle billing, coding, contracting, and clinical administration. It's the same model that allows the best primary care groups in the country to deliver exceptional care without the burnout.</p>
+      <p>Behind our clinics is the Alto MSO &mdash; the operational platform that lets our physicians focus on patients while we handle billing, coding, contracting, and clinical administration.</p>
       <p>Two locations today. More on the way.</p>
 
       <h2>What we believe</h2>
@@ -94,7 +99,12 @@
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="footer-brand"><img src="images/alto-logo.jpg" alt="Alto Health" /></div>
+        <div class="footer-brand"><svg class="alto-logo alto-logo--white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196 56" aria-label="Alto Health">
+  <path class="chevron-top" d="M5 28 L26 7 L47 28" stroke="#357291" stroke-width="11" fill="none" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path class="chevron-bottom" d="M5 51 L26 30 L47 51" stroke="#9FB197" stroke-width="11" fill="none" stroke-linecap="square" stroke-linejoin="miter"/>
+  <text class="wordmark-alto" x="62" y="33" font-family="'DM Sans', system-ui, sans-serif" font-size="30" font-weight="700" fill="#357291" letter-spacing="-0.5">alto</text>
+  <text class="wordmark-health" x="62" y="52" font-family="'DM Sans', system-ui, sans-serif" font-size="14" font-weight="600" fill="#9FB197" letter-spacing="4.5">HEALTH</text>
+</svg></div>
         <p class="footer-tagline">Medicare Advantage primary care that feels like family. Serving South Florida.</p>
       </div>
       <div class="footer-col">
