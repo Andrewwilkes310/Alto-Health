@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact | Alto Health</title>
+<meta name="description" content="Get in touch with Alto Health. Questions about becoming a patient or our MSO services? We're here to help." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">A</span>
+      Alto Health
+    </a>
+    <button class="mobile-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="locations.html">Locations</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="become-a-member.html" class="nav-cta">Become a Member</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ===== PAGE BANNER ===== -->
+<section class="page-banner">
+  <div class="container page-banner-inner">
+    <h1>Get in touch.</h1>
+    <p>Questions about becoming a patient? Interested in our MSO services? We'd love to hear from you.</p>
+  </div>
+</section>
+
+<!-- ===== CONTACT FORM ===== -->
+<section class="form-section">
+  <div class="container">
+    <div class="form-grid">
+      <div class="form-content">
+        <span class="section-eyebrow">Reach Us</span>
+        <h2>Talk to a real person.</h2>
+        <p>Whether you're a senior looking for a primary care doctor, a family member helping a loved one find care, or a practice exploring our MSO services — we're happy to help.</p>
+
+        <div style="margin-top: 32px;">
+          <h3 style="font-size: 1.15rem; margin-bottom: 8px;">Lauderdale Lakes Clinic</h3>
+          <p style="color: var(--cool-gray); margin-bottom: 4px;">4850 W. Oakland Park Blvd</p>
+          <p style="color: var(--cool-gray); margin-bottom: 12px;">Lauderdale Lakes, FL 33313</p>
+          <p style="margin-bottom: 4px;"><strong style="color: var(--navy);">Phone:</strong> <a href="tel:7867445372">(786) 744-5372</a></p>
+          <p style="color: var(--cool-gray);"><strong style="color: var(--navy);">Hours:</strong> Monday – Friday, 7:30 AM – 5:00 PM</p>
+        </div>
+
+        <div class="form-callout" style="margin-top: 32px;">
+          Prefer to call?
+          <strong><a href="tel:7867445372" style="color:white;">(786) 744-5372</a></strong>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h3>Send us a message</h3>
+        <form>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" required />
+            </div>
+            <div class="form-field">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="topic">What's this about?</label>
+            <select id="topic" name="topic">
+              <option value="become-member">Becoming a member</option>
+              <option value="mso">MSO / Practice services</option>
+              <option value="general">General question</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-arrow">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Alto Health</div>
+        <p class="footer-tagline">Medicare Advantage primary care that feels like family. Serving South Florida.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Care</h4>
+        <ul>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="become-a-member.html">Become a Member</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html#mso">Alto MSO</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><a href="tel:7867445372">(786) 744-5372</a></li>
+          <li>4850 W. Oakland Park Blvd<br />Lauderdale Lakes, FL 33313</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 Alto Health. All rights reserved.</div>
+      <div><a href="#">Privacy</a> · <a href="#">Notice of Privacy Practices</a></div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

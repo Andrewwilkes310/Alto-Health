@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Locations | Alto Health</title>
+<meta name="description" content="Find your Alto Health primary care clinic in South Florida. Two locations serving Medicare Advantage members." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">A</span>
+      Alto Health
+    </a>
+    <button class="mobile-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="locations.html" class="active">Locations</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="become-a-member.html" class="nav-cta">Become a Member</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ===== PAGE BANNER ===== -->
+<section class="page-banner">
+  <div class="container page-banner-inner">
+    <h1>Find your Alto Health clinic.</h1>
+    <p>Two South Florida locations — with more on the way.</p>
+  </div>
+</section>
+
+<!-- ===== LOCATIONS GRID ===== -->
+<section>
+  <div class="container">
+    <div class="locations-grid">
+
+      <!-- LOCATION 1: LAUDERDALE LAKES -->
+      <article class="location-card">
+        <div class="location-photo">
+          <span class="status-badge">Now Open</span>
+          <img src="images/dr-cemelus.png" alt="Dr. Jones Cemelus, Lauderdale Lakes" />
+        </div>
+        <div class="location-body">
+          <h2 class="location-city">Lauderdale Lakes</h2>
+          <p class="location-tagline">Now accepting new patients.</p>
+
+          <div class="location-doctor">
+            <img src="images/dr-cemelus.png" alt="Dr. Jones Cemelus" />
+            <div>
+              <div class="location-doctor-name">Jones Cemelus, MD</div>
+              <div class="location-doctor-meta">English · Spanish · Creole</div>
+            </div>
+          </div>
+
+          <div class="location-info">
+            <div class="location-info-row">
+              <span class="location-info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <div class="location-info-content">
+                <span class="location-info-label">Address</span>
+                <div class="location-info-value">4850 W. Oakland Park Blvd<br />Lauderdale Lakes, FL 33313</div>
+              </div>
+            </div>
+            <div class="location-info-row">
+              <span class="location-info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </span>
+              <div class="location-info-content">
+                <span class="location-info-label">Phone</span>
+                <div class="location-info-value"><a href="tel:7867445372">(786) 744-5372</a></div>
+              </div>
+            </div>
+            <div class="location-info-row">
+              <span class="location-info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+              </span>
+              <div class="location-info-content">
+                <span class="location-info-label">Hours</span>
+                <div class="location-info-value">Monday – Friday<br />7:30 AM – 5:00 PM</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="location-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=4850+W+Oakland+Park+Blvd+Lauderdale+Lakes+FL+33313" target="_blank" rel="noopener" class="btn btn-outline">Get Directions</a>
+            <a href="become-a-member.html" class="btn btn-primary">Become a Member</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- LOCATION 2: HOMESTEAD - COMING SOON -->
+      <article class="location-card">
+        <div class="location-photo coming-soon">
+          <span class="badge">Opening Soon</span>
+          <div class="icon-large">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+        </div>
+        <div class="location-body">
+          <h2 class="location-city">Homestead</h2>
+          <p class="location-tagline">Opening soon. Be the first to hear when we open.</p>
+
+          <div class="location-doctor">
+            <div style="width:56px;height:56px;border-radius:50%;background:var(--fog-gray);display:flex;align-items:center;justify-content:center;color:var(--cool-gray);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <div>
+              <div class="location-doctor-name">Provider to be announced</div>
+              <div class="location-doctor-meta">Now hiring physicians</div>
+            </div>
+          </div>
+
+          <div class="location-info">
+            <div class="location-info-row">
+              <span class="location-info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <div class="location-info-content">
+                <span class="location-info-label">Service Area</span>
+                <div class="location-info-value">Homestead, FL<br />and surrounding areas</div>
+              </div>
+            </div>
+            <div class="location-info-row">
+              <span class="location-info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </span>
+              <div class="location-info-content">
+                <span class="location-info-label">Status</span>
+                <div class="location-info-value">Opening soon — sign up for updates</div>
+              </div>
+            </div>
+            <div class="location-info-row">
+              <span class="location-info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </span>
+              <div class="location-info-content">
+                <span class="location-info-label">Inquiries</span>
+                <div class="location-info-value"><a href="tel:7867445372">(786) 744-5372</a></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="location-actions">
+            <a href="contact.html" class="btn btn-outline">Notify Me</a>
+            <a href="contact.html" class="btn btn-primary">Contact Us</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="cta-strip">
+  <div class="container cta-strip-inner">
+    <h2>Not sure which location is right for you?</h2>
+    <p>Give us a call. We'll help you find the best fit.</p>
+    <a href="tel:7867445372" class="btn btn-coral btn-arrow">Call (786) 744-5372</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Alto Health</div>
+        <p class="footer-tagline">Medicare Advantage primary care that feels like family. Serving South Florida.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Care</h4>
+        <ul>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="become-a-member.html">Become a Member</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html#mso">Alto MSO</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><a href="tel:7867445372">(786) 744-5372</a></li>
+          <li>4850 W. Oakland Park Blvd<br />Lauderdale Lakes, FL 33313</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 Alto Health. All rights reserved.</div>
+      <div><a href="#">Privacy</a> · <a href="#">Notice of Privacy Practices</a></div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

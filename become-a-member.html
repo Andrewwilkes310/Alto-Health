@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Become a Member | Alto Health</title>
+<meta name="description" content="Join Alto Health and get a primary care doctor who knows you. Simple sign-up for Medicare Advantage members in South Florida." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">A</span>
+      Alto Health
+    </a>
+    <button class="mobile-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="locations.html">Locations</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="become-a-member.html" class="nav-cta">Become a Member</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ===== PAGE BANNER ===== -->
+<section class="page-banner">
+  <div class="container page-banner-inner">
+    <h1>Become an Alto member.</h1>
+    <p>A few minutes to sign up. A lifetime of care that knows you.</p>
+  </div>
+</section>
+
+<!-- ===== FORM SECTION ===== -->
+<section class="form-section">
+  <div class="container">
+    <div class="form-grid">
+      <div class="form-content">
+        <span class="section-eyebrow">Joining Alto</span>
+        <h2>Simple. Personal. Done in three steps.</h2>
+        <p>Joining Alto Health is straightforward. If you have a Medicare Advantage plan, we'll help confirm coverage and schedule your first visit with one of our physicians.</p>
+        <ol>
+          <li>Tell us a bit about yourself using the form (or call us)</li>
+          <li>We confirm your insurance and answer any questions</li>
+          <li>You meet your new primary care doctor at your nearest Alto clinic</li>
+        </ol>
+        <div class="form-callout">
+          Prefer to talk?
+          <strong><a href="tel:7867445372" style="color:white;">(786) 744-5372</a></strong>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h3>Tell us about yourself</h3>
+        <form>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" required />
+            </div>
+            <div class="form-field">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="zip">ZIP Code</label>
+              <input type="text" id="zip" name="zip" required />
+            </div>
+            <div class="form-field">
+              <label for="location">Preferred Location</label>
+              <select id="location" name="location">
+                <option value="lauderdale-lakes">Lauderdale Lakes</option>
+                <option value="homestead">Homestead (Coming Soon)</option>
+                <option value="not-sure">Not sure yet</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="insurance">Medicare Advantage Plan</label>
+            <input type="text" id="insurance" name="insurance" placeholder="e.g. Humana, UnitedHealthcare, Aetna" />
+          </div>
+          <div class="form-field">
+            <label for="notes">Anything else we should know? (optional)</label>
+            <textarea id="notes" name="notes" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-arrow">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Alto Health</div>
+        <p class="footer-tagline">Medicare Advantage primary care that feels like family. Serving South Florida.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Care</h4>
+        <ul>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="become-a-member.html">Become a Member</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html#mso">Alto MSO</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><a href="tel:7867445372">(786) 744-5372</a></li>
+          <li>4850 W. Oakland Park Blvd<br />Lauderdale Lakes, FL 33313</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 Alto Health. All rights reserved.</div>
+      <div><a href="#">Privacy</a> · <a href="#">Notice of Privacy Practices</a></div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
