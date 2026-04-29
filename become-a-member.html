@@ -12,12 +12,10 @@
 </head>
 <body>
 
-<!-- ===== HEADER ===== -->
 <header class="site-header">
   <div class="nav-wrap">
     <a href="index.html" class="brand">
-      <span class="brand-mark">A</span>
-      Alto Health
+      <img src="images/alto-logo.jpg" alt="Alto Health" />
     </a>
     <button class="mobile-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
       <span></span><span></span><span></span>
@@ -33,7 +31,6 @@
   </div>
 </header>
 
-<!-- ===== PAGE BANNER ===== -->
 <section class="page-banner">
   <div class="container page-banner-inner">
     <h1>Become an Alto member.</h1>
@@ -41,7 +38,6 @@
   </div>
 </section>
 
-<!-- ===== FORM SECTION ===== -->
 <section class="form-section">
   <div class="container">
     <div class="form-grid">
@@ -64,30 +60,15 @@
         <h3>Tell us about yourself</h3>
         <form>
           <div class="form-row">
-            <div class="form-field">
-              <label for="firstName">First Name</label>
-              <input type="text" id="firstName" name="firstName" required />
-            </div>
-            <div class="form-field">
-              <label for="lastName">Last Name</label>
-              <input type="text" id="lastName" name="lastName" required />
-            </div>
+            <div class="form-field"><label for="firstName">First Name</label><input type="text" id="firstName" name="firstName" required /></div>
+            <div class="form-field"><label for="lastName">Last Name</label><input type="text" id="lastName" name="lastName" required /></div>
           </div>
           <div class="form-row">
-            <div class="form-field">
-              <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="phone" required />
-            </div>
-            <div class="form-field">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required />
-            </div>
+            <div class="form-field"><label for="phone">Phone</label><input type="tel" id="phone" name="phone" required /></div>
+            <div class="form-field"><label for="email">Email</label><input type="email" id="email" name="email" required /></div>
           </div>
           <div class="form-row">
-            <div class="form-field">
-              <label for="zip">ZIP Code</label>
-              <input type="text" id="zip" name="zip" required />
-            </div>
+            <div class="form-field"><label for="zip">ZIP Code</label><input type="text" id="zip" name="zip" required /></div>
             <div class="form-field">
               <label for="location">Preferred Location</label>
               <select id="location" name="location">
@@ -112,12 +93,11 @@
   </div>
 </section>
 
-<!-- ===== FOOTER ===== -->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="footer-brand">Alto Health</div>
+        <div class="footer-brand"><img src="images/alto-logo.jpg" alt="Alto Health" /></div>
         <p class="footer-tagline">Medicare Advantage primary care that feels like family. Serving South Florida.</p>
       </div>
       <div class="footer-col">
