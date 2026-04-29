@@ -80,20 +80,22 @@ section { padding: 88px 0; }
   max-width: var(--max-width); margin: 0 auto; gap: 24px;
 }
 
-/* LOGO — inline SVG */
+/* LOGO — transparent PNG */
 .brand {
   display: flex; align-items: center; text-decoration: none; flex-shrink: 0;
-  height: 44px;
+  height: 56px;
 }
 .alto-logo {
-  height: 40px;
+  height: 52px;
   width: auto;
   display: block;
+  max-width: none;
 }
-.alto-logo--white .chevron-top { stroke: rgba(255,255,255,0.95); }
-.alto-logo--white .chevron-bottom { stroke: rgba(255,255,255,0.75); }
-.alto-logo--white .wordmark-alto { fill: rgba(255,255,255,0.95); }
-.alto-logo--white .wordmark-health { fill: rgba(255,255,255,0.75); }
+/* Footer variant — turns logo into white silhouette on dark background */
+.alto-logo--white {
+  filter: brightness(0) invert(1);
+  opacity: 0.92;
+}
 
 .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; margin: 0; padding: 0; }
 .nav-links a {
@@ -132,8 +134,8 @@ section { padding: 88px 0; }
   .nav-links li { width: 100%; }
   .nav-cta { display: inline-block; }
   .mobile-toggle { display: block; }
-  .alto-logo { height: 34px; }
-  .brand { height: 38px; }
+  .alto-logo { height: 40px; }
+  .brand { height: 44px; }
 }
 
 /* BUTTONS */
@@ -344,6 +346,19 @@ section { padding: 88px 0; }
   text-transform: uppercase; z-index: 2;
 }
 .location-body { padding: 32px 28px; flex: 1; display: flex; flex-direction: column; }
+.status-pill {
+  display: inline-block;
+  padding: 5px 14px;
+  border-radius: 100px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  align-self: flex-start;
+}
+.status-pill.open { background: var(--alto-sage); color: var(--navy-deep); }
+.status-pill.coming-soon { background: rgba(53, 114, 145, 0.1); color: var(--alto-teal); }
 .location-city { font-family: var(--font-display); font-size: 1.75rem; font-weight: 600; color: var(--navy-deep); margin-bottom: 4px; }
 .location-tagline { color: var(--cool-gray); font-size: 0.95rem; margin-bottom: 24px; }
 .location-doctor {
